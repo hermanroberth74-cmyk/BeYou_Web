@@ -1,0 +1,38 @@
+/* Local-only conversational Twin interface, deliberately distinct from the dating demo. */
+.bt-globalnav {display:flex;gap:7px;justify-content:center;align-items:center;padding:10px 14px;background:#fff;border-bottom:1px solid #e3ddd8;position:sticky;top:0;z-index:3;}
+.bt-globalnav button {border:0;background:transparent;border-radius:18px;padding:10px 16px;color:#32415c;font-weight:600;cursor:pointer;font:inherit;}
+.bt-globalnav button:hover,.bt-globalnav button:focus-visible {background:#e9efff;outline:none;}
+.bt-screen {max-width:900px;margin:24px auto 60px;border:1px solid #dde3ef;border-radius:22px;background:#f1f5fd;overflow:hidden;box-shadow:0 10px 30px #1c36700b;color:#1d2a41;}
+.bt-chathead {display:flex;align-items:center;gap:14px;background:#fff;padding:18px 24px;border-bottom:1px solid #dce4f1;}
+.bt-chathead h2{font-size:1.35rem;line-height:1.3;margin:0;letter-spacing:0;}
+.bt-chathead p{margin:2px 0 0;color:#667288;font-size:.88rem;}
+.bt-avatar {width:46px;height:46px;border-radius:50%;background:#dfeaff;display:grid;place-items:center;color:#3265b8;font-size:1.5rem;flex:none;}
+.bt-local {margin-left:auto;font-size:.7rem;color:#64748b;border:1px solid #ccd7ea;border-radius:12px;padding:5px 9px;white-space:nowrap;}
+.bt-chips {display:flex;flex-wrap:wrap;gap:8px;padding:14px 22px 10px;background:#f8faff;}
+.bt-chips button {border:1px solid #bed0ea;background:#fff;color:#305a92;border-radius:22px;padding:9px 12px;font-size:.82rem;cursor:pointer;}
+.bt-chips button:hover {background:#e4eeff;}
+.bt-privacy {background:#f8faff;font-size:.76rem;color:#65718a;padding:0 23px 12px;}
+.bt-thread {height:min(55vh,500px);min-height:270px;overflow-y:auto;display:flex;flex-direction:column;gap:11px;padding:22px;background:linear-gradient(145deg,#f3f6fc,#eaf0fa);}
+.bt-message{max-width:82%;display:flex;flex-direction:column;gap:5px;}
+.bt-text{white-space:pre-wrap;overflow-wrap:anywhere;padding:13px 17px;border-radius:17px;line-height:1.55;box-shadow:0 1px 3px #182b4a12;}
+.bt-twin{align-self:flex-start;}.bt-twin .bt-text {background:#fff;color:#263751;border-bottom-left-radius:5px;}
+.bt-me{align-self:flex-end;}.bt-me .bt-text{background:#2e6bbd;color:#fff;border-bottom-right-radius:5px;}
+.bt-who{font-size:.69rem;color:#69788e;margin:0 8px;}
+.bt-me .bt-who{text-align:right;}
+.bt-compose {display:flex;gap:10px;align-items:flex-end;background:#fff;padding:13px 18px;border-top:1px solid #dbe3f1;}
+.bt-compose textarea {flex:1;min-width:0;min-height:50px;max-height:150px;resize:vertical;border:1px solid #d9e1ed;border-radius:17px;padding:14px 15px;font:inherit;font-size:.97rem;color:#233148;background:#f9fbff;}
+.bt-sendbutton{background:#2e6bbd;color:#fff;border:0;border-radius:17px;padding:16px 20px;cursor:pointer;font-weight:700;white-space:nowrap;}
+.bt-sendbutton:disabled {opacity:.6;cursor:wait;}
+.bt-under {padding:8px 18px 15px;background:#fff;display:flex;justify-content:space-between;align-items:center;gap:10px;color:#65718a;font-size:.78rem;}
+.bt-under button,.bt-panelhead button,.bt-tool button {background:transparent;border:1px solid #b9cbe6;color:#2b5d9d;border-radius:12px;padding:9px 13px;cursor:pointer;}
+.bt-portrait{margin:14px 22px;padding:16px;background:#fff;border:1px solid #cad7ee;border-radius:15px;max-height:280px;overflow:auto;}
+.bt-portrait[hidden]{display:none;}.bt-portrait p{white-space:pre-wrap;font-size:.88rem;line-height:1.55;margin:10px 0 0;}
+.bt-panelhead {display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.bt-tool {margin:10px 19px;background:#fff;border:1px solid #cbdaf0;border-radius:16px;padding:18px;}
+.bt-tool p{font-size:.87rem;color:#52647e;}.bt-tool textarea{display:block;width:100%;border:1px solid #cbdaf0;background:#f8fbff;border-radius:12px;padding:12px;margin:10px 0;min-height:60px;font:inherit;}
+.bt-tool button{margin-top:3px;}.bt-previewanswer {white-space:pre-wrap;font-style:italic;}
+.bt-tool #bt-correctionpanel[hidden]{display:none;}
+.bt-loading{padding-top:110px;text-align:center;}.bt-loading h2{font-size:2rem;}.bt-spinner{width:30px;height:30px;margin:24px auto;border:3px solid #c8d8ee;border-top-color:#306ac0;border-radius:50%;animation:btspin 1s linear infinite;}
+.bt-error{color:#a13232;font-weight:600;}.bt-flow{max-width:850px;}
+@keyframes btspin{to{transform:rotate(360deg)}}
+@media(max-width:680px){.bt-screen{border-radius:0;margin:8px 0 30px;border-left:0;border-right:0}.bt-chathead{padding:14px}.bt-local{display:none}.bt-chips{padding:12px}.bt-thread{padding:12px;height:52vh}.bt-message{max-width:93%}.bt-compose{padding:8px}.bt-sendbutton{padding:14px}.bt-under{padding:8px 12px}}
