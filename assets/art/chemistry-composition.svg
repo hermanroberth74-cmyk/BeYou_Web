@@ -1,13 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-label="Original geometric abstract art about human connection">
-<circle cx="159" cy="148" r="87" fill="#F6C955" opacity=".97"/>
-<path d="M 311 64 L 530 105 L 512 269 L 302 232Z" fill="#507FC0" opacity=".84"/>
-<circle cx="368" cy="279" r="92" fill="#98AAA1" opacity=".88"/>
-<rect x="88" y="266" width="125" height="39" rx="3" transform="rotate(-12 88 268)" fill="#D07850" opacity=".90"/>
-<path d="M 64 276 C 156 338, 182 33, 310 133 S 508 392, 554 231" fill="none" stroke="#283C45" stroke-width="3.3" stroke-linecap="round"/>
-<circle cx="228" cy="208" r="60" fill="none" stroke="#1D2F36" stroke-width="2.7"/>
-<path d="M 453 303 L 514 335 M 464 285 L 525 317 M 475 267 L 536 299" fill="none" stroke="#24363A" stroke-width="2.9" stroke-linecap="square"/>
-<circle cx="111" cy="347" r="8" fill="#507FC0"/>
-<circle cx="250" cy="58" r="6" fill="#D07850"/>
-<rect x="515" y="64" width="17" height="17" transform="rotate(28 527 72)" fill="#F6C955"/>
-<path d="M 102 53 l25 -22" fill="none" stroke="#507FC0" stroke-width="7" stroke-linecap="square"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="660" viewBox="0 0 920 660" role="img" aria-label="Abstract study of overlapping personality shapes and their connections">
+<defs>
+ <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#faf7ef"/><stop offset="1" stop-color="#f6efe6"/></linearGradient>
+ <linearGradient id="heart" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#e9a786"/><stop offset="1" stop-color="#ba7262"/></linearGradient>
+ <filter id="sh"><feDropShadow dx="0" dy="11" stdDeviation="15" flood-color="#645c50" flood-opacity=".12"/></filter>
+</defs>
+<rect width="920" height="660" rx="46" fill="url(#wash)"/>
+<circle cx="484" cy="320" r="213" fill="none" stroke="#9daa97" stroke-width="2" opacity=".5"/>
+<circle cx="484" cy="320" r="257" fill="none" stroke="#a5aa9b" stroke-width="1" stroke-dasharray="5 12" opacity=".45"/>
+<path d="M77 115 Q325 44 476 211 Q654 400 831 176" fill="none" stroke="#50695e" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+<path d="M111 542 Q280 423 476 503 Q671 570 839 424" fill="none" stroke="#b88975" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+<circle cx="272" cy="246" r="112" fill="#d9aa8e" filter="url(#sh)"/>
+<rect x="462" y="163" width="242" height="242" rx="74" transform="rotate(14 583 284)" fill="#8fa89b" filter="url(#sh)"/>
+<path d="M393 397 Q489 318 594 395 Q668 444 653 543 Q538 581 436 532 Q382 487 393 397Z" fill="url(#heart)" opacity=".93"/>
+<path d="M268 224 Q314 132 386 187 Q408 270 328 305" fill="none" stroke="#fff9ee" stroke-width="7" stroke-linecap="round"/>
+<circle cx="523" cy="254" r="64" fill="#edce8c"/>
+<path d="M550 201 L601 254 L551 307 L497 254Z" fill="#c37962"/>
+<path d="M157 387 L317 309 L328 465 L157 543Z" fill="#48695f" opacity=".91"/>
+<path d="M213 405 L285 367 M209 448 L295 404 M206 492 L297 439" stroke="#f1e8d5" stroke-width="4" stroke-linecap="round"/>
+<path d="M638 422 Q738 326 797 430 Q812 522 738 556 Q678 551 638 422Z" fill="#d6bd84" opacity=".9"/>
+<path d="M667 414 Q718 469 784 416" fill="none" stroke="#6e756b" stroke-width="5" stroke-linecap="round"/>
+<circle cx="370" cy="108" r="20" fill="#d79e78"/><circle cx="746" cy="177" r="16" fill="#657e72"/>
+<circle cx="361" cy="566" r="12" fill="#667e73"/><circle cx="739" cy="330" r="9" fill="#b16a5d"/>
+<path d="M184 135 L236 116 M716 580 L762 603 M712 109 L747 84" stroke="#ae7568" stroke-width="5" stroke-linecap="round"/>
+<path d="M317 250 Q392 295 450 269 M562 377 Q614 415 635 469" fill="none" stroke="#f9efdd" stroke-width="4" stroke-dasharray="4 11" opacity=".9"/>
+<g aria-hidden="true" opacity=".82"><circle cx="155" cy="141" r="13" fill="#E8B844"/><path d="M716 124 l35 -34 M736 147 l43 -17" fill="none" stroke="#356F9B" stroke-width="12" stroke-linecap="round"/><circle cx="734" cy="478" r="10" fill="#E8B844"/></g></svg>
