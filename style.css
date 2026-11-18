@@ -650,3 +650,129 @@ html,body,.app-shell,main#app{max-width:100%;min-width:0}
 @media (max-width: 760px) and (max-height: 650px) {
   .restored-home .heritage-hero { min-height: 695px; }
 }
+
+/* FINAL: small phone-height reduction. Same original two hills and same artwork placement.
+   Only reduces excess vertical height; no redesign or additional decoration. */
+@media (max-width:760px) {
+  .restored-home .heritage-hero {
+    min-height: max(620px, calc(100svh - 106px));
+    padding-bottom: 22px;
+  }
+  .restored-home .heritage-hero .hero-copy {
+    padding-top: clamp(116px, 17svh, 165px);
+  }
+  .restored-home .heritage-hero .hero-side { bottom: 8%; }
+  .restored-home .heritage-hero .heritage-abstract { bottom: 9%; }
+  .restored-home .heritage-hero::after { bottom: -27%; }
+}
+@media (max-width:390px) {
+  .restored-home .heritage-hero { min-height: max(605px, calc(100svh - 106px)); }
+  .restored-home .heritage-hero .hero-copy { padding-top: clamp(108px, 16svh, 148px); }
+  .restored-home .heritage-hero .heritage-abstract { bottom: 10%; }
+}
+@media (max-width:760px) and (max-height:650px) {
+  .restored-home .heritage-hero { min-height: 610px; }
+}
+
+/* Be-You connection intro + inline Twin settings */
+.twin-settings{margin-top:24px;padding:clamp(20px,4vw,34px)}
+.twin-settings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px 0}
+.twin-settings-grid .form-field{min-width:0}
+.vibe-intro-scrim{z-index:9999;padding:16px;display:flex;align-items:center;justify-content:center}
+.vibe-intro-modal{width:min(100%,660px);max-height:min(88dvh,850px);overflow:auto;background:#faf6ee;color:#2d2620;border-radius:24px;padding:clamp(22px,4vw,42px);box-shadow:0 30px 80px #20161055}
+.vibe-intro-modal h2{font-size:clamp(34px,6vw,56px);line-height:1.05;margin:20px 0 12px}
+.vibe-intro-modal h2 em{font-family:Georgia,serif;font-weight:400}
+.vibe-intro-modal h3{font-size:19px;margin:22px 0 6px}
+.vibe-intro-modal p{line-height:1.6;margin:9px 0;color:#4d433a}
+.vibe-intro-modal .vibe-intro-lead{font-size:22px;font-weight:650;color:#2d2620}
+.vibe-intro-gesture{display:flex;gap:10px;justify-content:space-between;align-items:center;background:#eae0d1;border-radius:12px;padding:15px;margin:20px 0;font-size:13px}
+.vibe-intro-gesture strong{text-align:center}
+.vibe-intro-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-top:23px}
+@media(max-width:600px){.twin-settings-grid{grid-template-columns:1fr}.vibe-intro-gesture{font-size:11px}.vibe-intro-modal{max-height:92dvh}.vibe-intro-footer>*{width:100%}}
+
+/* Editable discovery introduction only. All pre-existing design rules are unchanged. */
+.vibe-intro-editor{display:grid;gap:13px;margin:14px 0 0}
+.vibe-intro-edit-label{display:grid;gap:5px;font-size:13px;font-weight:650;color:#403329}
+.vibe-intro-edit-label textarea{width:100%;min-height:76px;resize:vertical;box-sizing:border-box;border:1px solid #cec4b8;border-radius:11px;padding:11px 12px;background:#fffdf8;color:#2d2620;font:400 14px/1.5 inherit;font-family:inherit;line-height:1.55}
+.vibe-intro-edit-label textarea:focus{outline:2px solid #ae8061;outline-offset:2px}
+/* Make the requested data reset accessible on phones as well as desktop. */
+@media(max-width:760px){.topbar .top-actions{display:flex}}
+
+/* Nov 18 targeted usability adjustments; original visual system retained */
+.logo{letter-spacing:-.045em;word-spacing:0;white-space:nowrap}
+.feature-panels{grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr)}
+.feature-panels>*{min-width:0}
+.vibe-intro-modal{display:flex;flex-direction:column;overflow:hidden;max-height:min(92dvh,900px);padding:0;min-height:0}
+.vibe-intro-top{padding:14px 24px 0;flex:none}
+.vibe-intro-scroll{overflow-y:auto;overscroll-behavior:contain;padding:2px clamp(22px,4vw,42px) 22px;min-height:0;flex:1}
+.vibe-intro-footer{flex:none;justify-content:flex-end;margin:0;padding:14px 24px 18px;border-top:1px solid #e6d9cc;background:#faf6ee}
+.vibe-collection-note{margin-top:23px;padding:17px 18px;background:#efe5d8;border-radius:13px}
+.vibe-collection-note h3{margin-top:0}
+.vibe-collection-note p{margin-bottom:6px}
+.vibe-text-slide{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(145deg,#eee5d8,#dcd8cf);color:#49392d;width:100%;height:100%;padding:clamp(24px,5vw,55px);position:relative;gap:20px}
+.vibe-text-content{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.45rem,3.6vw,2.35rem);line-height:1.25;max-width:560px;white-space:normal}
+.vibe-text-exchange .vibe-text-content{font-size:clamp(1.18rem,2.7vw,1.85rem);line-height:1.38}
+.vibe-text-slide small{font-size:.72rem}
+.vibe-gallery-thumbs{overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;justify-content:flex-start}
+.vibe-gallery-thumbs button{flex:0 0 64px;min-width:64px;overflow:hidden}
+.vibe-gallery-thumbs .vibe-word-thumb{display:grid;place-items:center;background:#e8d9ca;width:100%;height:100%;font-size:1.5rem;color:#83533d}
+.private-photo-upload p{font-size:.91rem}
+.photo-upload-button{display:inline-flex;position:relative;align-items:center;gap:8px;padding:12px 18px;background:#a34836;border-radius:12px;color:white;font-weight:650;cursor:pointer;margin:12px 0 16px}
+.photo-upload-button input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.private-photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(95px,1fr));gap:10px}
+.private-photo-item{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/5;background:#eee}
+.private-photo-item img{width:100%;height:100%;object-fit:cover}
+.private-photo-item button{position:absolute;top:4px;right:4px;border:0;border-radius:50%;width:28px;height:28px;background:#241a19cc;color:white;font-size:20px}
+.heritage-intro{display:flex;flex-direction:column;max-height:min(94dvh,900px);overflow:hidden;min-height:0}
+.heritage-intro .modal-header,.heritage-intro .modal-footer{flex:none}
+.heritage-intro .heritage-slide-layout{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;align-content:start}
+.heritage-intro .slide-visual{max-width:100%;overflow:hidden}
+.heritage-intro .privacy-visual{overflow:hidden;max-width:100%;min-width:0}
+.heritage-intro .privacy-visual .control-row{max-width:100%;min-width:0}
+@media(max-width:760px){
+ .feature-panels{display:flex;flex-direction:column}
+ .feature-panels>.chat-shell{order:0;width:100%;min-height:520px}
+ .feature-panels>.side-cards{order:1;display:grid;grid-template-columns:1fr;gap:10px;width:100%}
+ .feature-panels .side-card{margin:0}
+ .vibe-intro-scrim{padding:8px;align-items:center}
+ .vibe-intro-modal{width:100%;max-height:calc(100dvh - 24px);border-radius:17px}
+ .vibe-intro-top{padding:10px 16px 0}
+ .vibe-intro-scroll{padding:0 19px 17px}
+ .vibe-intro-modal h2{font-size:clamp(1.95rem,8vw,2.9rem);margin:8px 0 13px}
+ .vibe-intro-modal p{font-size:.91rem;line-height:1.48}
+ .vibe-intro-modal .vibe-intro-lead{font-size:1.18rem}
+ .vibe-intro-footer{padding:10px 16px calc(12px + env(safe-area-inset-bottom))}
+ .vibe-intro-footer .btn{width:100%}
+ .heritage-modal-scrim{padding:8px}
+ .heritage-intro{max-height:calc(100dvh - 24px);width:100%;border-radius:14px}
+ .heritage-intro .heritage-slide-layout{display:flex;flex-direction:column;gap:10px;padding:0 18px 12px}
+ .heritage-intro .heritage-slide-content{width:100%;flex:none}
+ .heritage-intro .slide-visual{height:auto;min-height:130px;max-height:190px;flex:0 0 155px;overflow:hidden;width:100%}
+ .heritage-intro .modal-footer{position:relative;background:#fffaf4;z-index:2}
+ .vibe-gallery{max-height:calc(100dvh - 22px);overflow-y:auto}
+ .vibe-gallery-stage{height:min(48dvh,430px);min-height:235px}
+ .vibe-discover-refresh .vibe-media{height:min(68dvh,430px);min-height:290px;max-height:430px}
+ .vibe-text-slide{padding:20px}
+ .vibe-text-content{font-size:clamp(1.32rem,5.3vw,2rem)}
+}
+@media(max-width:390px){.heritage-intro .slide-visual{flex-basis:120px;max-height:130px}.heritage-intro .modal-footer{padding:9px 12px}.vibe-intro-modal h2{font-size:1.85rem}}
+/* Narrow-scope connection preview typography and attribution controls. */
+.vibe-words-preview{margin:6px 0 14px;padding:10px 0 9px;border-top:1px solid #ebdfd4;border-bottom:1px solid #ebdfd4}
+.vibe-words-preview blockquote{margin:0 0 4px;padding:0;border:0;font-family:'Instrument Serif',Georgia,serif;color:#5e463b;font-size:clamp(1.13rem,1.8vw,1.43rem);line-height:1.24}
+.vibe-words-preview small{display:block;font-size:.68rem;color:#857568;line-height:1.4}
+.vibe-words-preview .vibe-preview-exchange{font-size:.8rem;line-height:1.5;margin:13px 0 4px;color:#4a4c42}
+.vibe-artist-info{align-self:flex-start;margin-bottom:7px;font-size:.79rem}
+.vibe-track-link{display:inline-block;color:#843e31;border:1px solid #bd998a;background:#fff7ed;text-decoration:none;font:600 .87rem/1.3 system-ui,sans-serif;padding:10px 13px;border-radius:12px;max-width:90%}
+.vibe-track-link:hover,.vibe-track-link:focus-visible{background:#f2dfcb}
+.vibe-text-quote .vibe-text-content{font-size:clamp(1.6rem,4vw,2.65rem)}
+.vibe-text-slide small{line-height:1.4}
+@media(max-width:700px){.vibe-words-preview blockquote{font-size:1.37rem}.vibe-words-preview .vibe-preview-exchange{font-size:.84rem}.vibe-discover-refresh .vibe-info{padding:22px 20px 25px}.vibe-text-slide{padding:22px;gap:14px}.vibe-text-content{font-size:1.6rem}.vibe-text-exchange .vibe-text-content{font-size:1.22rem}}
+
+/* Vibe introduction: a single consistent heading font; copy and quotation kept in white profile area. */
+.vibe-intro-modal h2,.vibe-intro-modal h2 em{font-family:inherit!important;font-style:normal!important;font-weight:750!important}
+.vibe-words-preview .vibe-preview-poem{font-family:'Instrument Serif',Georgia,serif;font-size:1.12rem;line-height:1.4;white-space:normal;color:#6b5547;margin:13px 0;border-top:1px solid #e9ded4;padding-top:12px}
+.vibe-audio-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:9px 0 13px}
+.vibe-audio-row small{font-size:.7rem;color:#78685b}
+.vibe-audio-control{display:inline-flex;align-items:center;gap:9px;border:1px solid #caa693;background:#fffaf5;color:#783d30;padding:9px 13px;border-radius:999px;font:650 .84rem/1.2 system-ui,sans-serif;cursor:pointer}
+.vibe-audio-control:hover,.vibe-audio-control:focus-visible{background:#f3e5db;outline-offset:3px}
+@media(max-width:700px){.vibe-words-preview .vibe-preview-poem{font-size:1.14rem}.vibe-audio-row{align-items:flex-start}}
