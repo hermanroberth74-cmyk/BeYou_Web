@@ -776,3 +776,13 @@ html,body,.app-shell,main#app{max-width:100%;min-width:0}
 .vibe-audio-control{display:inline-flex;align-items:center;gap:9px;border:1px solid #caa693;background:#fffaf5;color:#783d30;padding:9px 13px;border-radius:999px;font:650 .84rem/1.2 system-ui,sans-serif;cursor:pointer}
 .vibe-audio-control:hover,.vibe-audio-control:focus-visible{background:#f3e5db;outline-offset:3px}
 @media(max-width:700px){.vibe-words-preview .vibe-preview-poem{font-size:1.14rem}.vibe-audio-row{align-items:flex-start}}
+
+/* Nov 18: compact onboarding illustrations and non-overflowing original visual */
+@media(max-width:800px){
+ .heritage-intro .slide-visual{height:118px!important;min-height:0!important;max-height:118px!important;flex:0 0 118px!important;padding:7px!important;overflow:hidden!important}
+ .heritage-intro .privacy-visual{transform:scale(.76);transform-origin:center center;width:130%;max-width:none;margin-left:-15%;height:auto}
+ .heritage-intro .heritage-slide-layout{overflow-y:auto;min-height:0}
+ .heritage-intro .heritage-slide-content{flex:0 0 auto}
+}
+@media(max-width:390px){.heritage-intro .slide-visual{height:105px!important;max-height:105px!important;flex-basis:105px!important}}
+.vibe-no-training{font-weight:500;border-left:3px solid #a14d38;padding:11px 13px;background:#f6eee7;border-radius:4px;line-height:1.55}
